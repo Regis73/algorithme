@@ -1,0 +1,10 @@
+Algorithme table_de_multiplication_dun_nombre_entre_par_utilisateur;
+Var:
+	n,i:entiers;
+Debut
+	Ecrire "Entrez un nombre:";
+	Lire n;
+	Pour (i <-- 1 à 10 Pas de 1)
+		Ecrire n,"x",i,"=",i*n;
+	FinPour
+Fin
