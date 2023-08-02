@@ -1,0 +1,22 @@
+Agorithme decaler_les_0_vers_la_fin_du_tableau;
+Var:
+	tab(1:10): tableau d'entiers;
+	i,j,max: entiers;
+	decale: booléen;
+Debut
+	Repeter
+		decale <--faux;
+		Pour (i <-- 1 à 10 Pas de 1):
+			Si (tab[i]=0) Alors:
+				decale <-- vrai;
+			FinSi
+			Si (decale) Alors:
+				max <-- 10-1;
+				Pour (j <-- i à max Pas de 1):
+					tab[j] <-- tab[j+1];
+				FinPour
+				max <-- max-1;
+				tab[j+1]=0;
+			FinSi	
+		FinPour
+	jusqu'à (decale = faux)	
