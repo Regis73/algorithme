@@ -1,0 +1,15 @@
+Algorithme nombre_copris _10et20;
+Var:
+	n: enters;
+Debut
+	n<--0;
+	Ecrire "Entrez un nombre compris entre 10 et 20:";
+	TantQue (n<10 ou n>20) Faire:
+		Lire n;
+		Si (n<10) Alors:
+			Ecrire "Plus grand";
+		SinonSi (n>20) Alors:
+			Ecrire "Plus petit";
+		FinSi
+	FinTantQue
+Fin
