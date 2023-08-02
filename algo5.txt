@@ -1,0 +1,13 @@
+Algorithme calcul_du_prix_tout_taxe_a_payer;
+Var:
+	prixHT, prix_achat: réels
+Debut
+	Ecrire "Entrez le montant d\' achât:"
+	Lire prixHT;
+	prix_achat <-- prixHT*(1+0.2);
+	Si (prix_achat>200) Alors:
+		Ecrire "Le montant tout taxe compris à payer avec une reduction de 20% est:", prix_achat*(1-0.15);
+	Sinon
+		Ecrire "Le montant tout taxe compris à payer est:", prix_achat;
+	FinSi
+Fin
