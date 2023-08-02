@@ -1,0 +1,14 @@
+Algorithme somme_des_entiers_de_1_jusquau_nombre_entre;
+Var:
+	n,i,s: entiers;
+Debut
+	Ecrire "Entrez un nombre";
+	Lire n;
+	s<--0;
+	i<--1;
+	TantQue (i<=n) Faire:
+		s <-- s+i;
+		i <-- i+1;
+	FinTantQue
+	Ecrire "La somme des entiers de 1 jusqu\'à",n,"est:",s;
+Fin
