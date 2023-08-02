@@ -1,0 +1,34 @@
+Algorithme chance_de_gagner_jeu_de_chevaux;
+Var:
+	p,j,i,d: entiers;
+Debut 
+	p<--2;
+	j<--3;
+	TantQue (p<j) Faire:
+		Ecrire "Entrez le nombre de chevaux partants:";
+		Lire p;
+		Ecrire "Entrez le nombre de chevaux joués:";
+		Lire j;
+		Si (p<j) Alors:
+			Ecrire "Le nombre de chevaux joués ne doit pas être superieur au nombre de chevaux partants.Recommencez !";
+		FinSi
+	FinTantQue
+	d <-- p-j;
+	i <-- p-1;
+	Repeter 
+		p <-- p*i;
+		i <-- i-1;
+	jusqu'à (i=1)	
+	i <-- j-1;
+	Repeter 
+		j <-- j*i;
+		i <-- i-1;
+	jusqu'à (i=1)	
+	i <-- d-1;
+	Repeter 
+		d <-- d*i;
+		i <-- i-1;
+	jusqu'à (i=1)	
+	Ecrire "Dans l'ordre: vous avez une chance sur", n/d," de gagner."
+	Ecrire "Dans le desordre: vous avez une chance sur", n/(p*d)," de gagner."
+Fin
