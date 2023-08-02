@@ -1,0 +1,16 @@
+Algorithme nombre_doccurence_de_5_dans_ une_suite_dentiers;
+Var:
+	n, occu: entiers;
+Debut
+	n<--1;
+	Ecrire "Entrez votre suite d'entiers:"
+	TantQue (n<>0) Faire:
+		Lire n;
+		Si(n=5) Alors:
+			occu<--occu+1;
+		FinSi
+	 	Ecrire"A la fin de votre suite, entrez 0";
+ 	FinTantQue
+	Ecrire "Fin de la suite !"
+	Ecrire "Le nombre d'occurence de 5 est:", occu;
+Fin
