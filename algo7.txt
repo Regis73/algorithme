@@ -1,0 +1,17 @@
+Algorithme egalite_de_2_tableaux;
+Var:
+	tabA(1:10), tabB(1:10): tableau d'entiers;
+	egalite, i: entiers;
+Debut
+	egalite<--0;
+	Pour (i <-- 1 à 10 Pas de 1):
+		Si (tabA[i] = tabB[i]) Alors:
+			egalite <-- egalite+1;
+		FinSi
+		Si (egalite = 10) Alors:
+			Ecrire "VRAI";
+		Sinon
+			Ecrire "FAUX";
+		FinSi
+	FinPour
+Fin
