@@ -1,0 +1,28 @@
+Algorithme mois_en_lettre_a_partir_de_son_numero;
+Var:
+	n: entiers
+Debut
+	n<--0;
+	Ecrire "Entrez un numero de mois (compris entre 1 et 12):";
+	TantQue (n<1 et n>12) Faire:
+		Lire n;
+		Si (n<1 ou n>12) Alors:
+		Ecrire "Ce numéro est incorrect. Entrez un nouveau numéro:"
+		FinSi
+	FinTantQue
+	Suivant n Faire:
+		1: Ecrire "Janver";
+		2: Ecrire "Février";
+		3: Ecrire "Mars";
+		4: Ecrire "Avril";
+		5: Ecrire "Mai";
+		6: Ecrire "Juin";
+		7: Ecrire "Juillet";
+		8: Ecrire "Août";
+		9: Ecrire "Septembre";
+		10: Ecrire "Octobre";
+		11: Ecrire "Novembre";
+	Sinon
+		Ecrire "Décembre";
+	FinSuivant
+Fin
