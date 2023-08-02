@@ -1,0 +1,17 @@
+Algorithme le_plus_grand_dans_une_serie_de_20_nombres;
+Var:
+	n, i, p, max: entiers;
+Debut
+	i <-- 1;
+	max <-- 0;
+	TantQue (i<=20) Faire:
+		Ecrire "Entrez le nombre n°",i,":";
+		Lire n;
+		Si (n>=max) Alors:
+			max <-- n;
+			p <-- i;
+		FinSi
+	FinTantQue	
+	Ecrire "Le plus grand de ces nombres est:",max;
+	Ecrire "C\'était le nombre numéro", i;
+Fin	 	
