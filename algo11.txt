@@ -1,0 +1,38 @@
+Algorithme simulation_remose_de_monnaie;
+Var:
+	n, n5, n1, n10s: entier;
+	prix, somme: réels;
+Debut
+	n<--1;
+	somme<--0;
+	Ecrire "Entrez votre suite d'entiers:"
+	TantQue (n<>0) Faire:
+		Lire n;
+		somme<--somme+1;
+	 	Ecrire"A la fin de votre suite, entrez 0";
+ 	FinTantQue
+	Ecrire "Fin de la suite !"
+	Ecrire "Vous nous devez:", somme;
+	Ecrire "Combien vous payez ?";
+	Lire prix;
+	prix <-- prix-somme;
+	Si (prix > 0) alors:
+		TantQue (prix>10) faire:
+			prix <-- prix - 10;
+			n10 <-- n10 + 1;
+		FinTantQue
+		TantQue (prix>5) faire:
+			prix <-- prix - 5;
+			n5 <-- n5 + 1;
+		FinTantQue
+		TantQue (prix < 5 et prix >= 1) faire:
+			n1 <-- prix;
+		FinTantQue
+		Ecrire "Vous Devez prendre:",n10,"billets de 10 Euros",n5,"billets de 5 Euros et",n1,"billets de 1 Euro." 
+	SinonSi (prix < 0) alors:
+		Ecrire "Vous nous devez encore:", -prix;
+	Sinon
+		Ecrire "Vous venez de payer cash, Merci ! Vous nous devez plus rien";
+	FinSi
+
+	
